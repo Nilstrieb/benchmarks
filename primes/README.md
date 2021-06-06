@@ -6,3 +6,4 @@ Printing time is not included.
 | Language | Time   |
 | ---------| -------|
 | Java     | 1836ms |
+| Javascript | 1778.2ms |
