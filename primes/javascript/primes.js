@@ -9,6 +9,8 @@ for (let i = 0; i < 10; i++) {
     times.push(totalTime);
 }
 
+console.assert(primes(10_000_000).length === 664_579);
+
 const average = times.reduce((a, b) => a + b, 0) / times.length;
 console.log(`Average time was ${average}ms`)
 
