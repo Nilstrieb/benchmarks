@@ -35,7 +35,7 @@ fn primes(max: u32) -> Vec<u32> {
                 break;
             }
         }
-        i += 1;
+        i += 1
     }
 
     primes_list
