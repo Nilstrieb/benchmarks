@@ -24,9 +24,10 @@ fn primes(max: u32) -> Vec<u32> {
 
     primes_list.push(2);
 
-    for i in 3..max { //go through all numbers
+    for mut i in 3..max {
+        let sqr_root: u32 = (i as f64).sqrt() as u32;
         for prime in &primes_list { //test each number
-            if *prime > (i as f64).sqrt() as u32 {
+            if *prime > sqr_root {
                 primes_list.push(i);
                 break;
             }
@@ -34,7 +35,8 @@ fn primes(max: u32) -> Vec<u32> {
                 break;
             }
         }
+        i += 1;
     }
 
-    return primes_list;
+    primes_list
 }
