@@ -11,5 +11,5 @@ and we should never forget that V8 is... **fast**.
 | ---------| -------|
 | Java     | 1836ms |
 | Javascript | 1778ms |
-| Rust      | 1818ms |
+| Rust      | 577ms |
 | python3 | 34361ms |

@@ -3,7 +3,7 @@ use std::time::{SystemTime};
 fn main() {
     let mut times = Vec::new();
 
-    for i in 0..2 {
+    for i in 0..10 {
         println!("Starting run {}", i);
         let start = SystemTime::now();
         let _ = primes(10_000_000);
@@ -19,14 +19,14 @@ fn main() {
 }
 
 
-fn primes(max: usize) -> Vec<usize> {
-    let mut primes_list = Vec::new();
+fn primes(max: u32) -> Vec<u32> {
+    let mut primes_list: Vec<u32> = Vec::new();
 
     primes_list.push(2);
 
     for i in 3..max { //go through all numbers
         for prime in &primes_list { //test each number
-            if *prime > (i as f64).sqrt() as usize {
+            if *prime > (i as f64).sqrt() as u32 {
                 primes_list.push(i);
                 break;
             }
