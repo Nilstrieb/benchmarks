@@ -10,7 +10,7 @@ public class DefaultPrimes implements Primes {
 
         primesList.add(2);
 
-        for (int i = 3; i < max; i += 2) { //go through all numbers
+        for (int i = 3; i < max; i++) { //go through all numbers
             boolean isPrime = true;
             double sqrRoot = Math.sqrt(i);
             for (int j = 0; j < primesList.size(); j++) { //test each number
