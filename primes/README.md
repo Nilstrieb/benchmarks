@@ -7,5 +7,5 @@ Printing time is not included.
 | ---------| -------|
 | Java     | 1836ms |
 | Javascript | 1778ms |
-| Rust      | 577ms |
+| Rust      | 577ms (different PC) |
 | python3 | 34361ms |
